@@ -52,6 +52,11 @@
             const headerH1 = document.createElement('h1');
             headerH1.textContent = jsonObj['companyName'];
             header.appendChild(headerH1);
+            // Grab the company location and established data
+            const headerPara = document.createElement('p');
+            headerPara.textContent = 'Head Office ' + jsonObj['headOffice'] + ', Established: ' +
+            jsonObj['established'];
+            header.appendChild(headerPara);
         }
 
 		/* STEP 10a: Assemble the showTopFlavors() function */
